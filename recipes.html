@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of Curry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    height: 5%;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(255, 56, 56, 0.1);
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    margin-right: 970px;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    margin-top:-35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: -5px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.category {
+    background-color: #ffffff;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(28, 27, 27, 0.309);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .categories {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+
+
+.category {
+    text-align: center;
+    margin: 20px;
+    border-radius: 15px;
+    border-width: 1px;
+
+}
+
+.category img {
+    width: 190px;
+    height: 290px;
+    border-radius: -2%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: -4.8px;
+}
+
+.category img:hover {
+    transform: scale(1.05);
+}
+
+.category p {
+    margin-top: 5px;
+    margin-bottom: -10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+</style>
+<body>
+    <header>
+        <h1>Cook with Kumud</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <section class="categories">
+        <div class="category">
+            <a href="vada-pav.html">
+               <img src="images/vada-pav.jpg" alt="vada Pav">
+               <p>Vada Pav</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="aloo-tikki.html">
+            <img src="images/aloo tikki.jpg" alt="aloo tikkki">
+            <p>Aloo Tiki</p>
+        </a>
+        </div>
+        
+        <div class="category">
+            <a href="dahi-puri.html">
+            <img src="images/dahi puri.jpg" alt="dahi puri">
+            <p>Dahi Puri</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="bhel-puri.html">
+            <img src="images/snacks.jpg" alt="bhel-puri">
+            <p>Bhel-Puri</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="Chickpea.html">
+            <img src="images/Chickpea Salad.jpg" alt="Chickpea Salad">
+            <p>Chickpea Salad</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="corn-pakoda.html">
+            <img src="images/Corn Pakoda.jpg" alt="Corn Pakoda">
+            <p>Corn Pakoda</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="besan-chilla.html">
+            <img src="images/besan-chilla.jpg" alt="Besan Chilla">
+            <p>Besan Chilla</p>
+        </a>
+        </div>
+
+        <div class="category">
+            <a href="masala-chai.html">
+            <img src="images/masala-chai.jpg" alt="Masala Chai">
+            <p>Masala Chai</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="dosa.html">
+            <img src="images/dosa.jpg" alt="Crispy Dosa">
+            <p>Crispy Dosa</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="idli.html">
+            <img src="images/idli.jpg" alt="idli">
+            <p>Soft idli</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="aloo-gobhi.html">
+            <img src="images/aloo-gobhi.jpg" alt="Aloo Ghobi">
+            <p>Aloo Gobhi</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="aloo-paratha.html">
+            <img src="images/aloo-paratha.jpg" alt="aloo tikkki">
+            <p>Aloo Paratha</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="brownie.html">
+            <img src="images/brownie.jpg" alt="aloo tikkki">
+            <p>Brownies</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="kheer.html">
+            <img src="images/kheer.jpg" alt="kheer">
+            <p>Kheer</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="gajar-halwa.html">
+            <img src="images/halwa.jpg" alt="Gajar Ka Halwa">
+            <p>Gajar Ka Halwa</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="shrikhand.html">
+            <img src="images/shrikhand.jpg" alt="shrikhand">
+            <p>Traditional Shrikhand</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="rasmalai.html">
+            <img src="images/rassmalai.jpg" alt="rassmalai">
+            <p>Rassmalai</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="gulab-jamun.html">
+            <img src="images/gulab jamun.jpg" alt="gulab-jamun">
+            <p>Gulab-Jamun</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="malai-kofta.html">
+            <img src="images/main-course.jpg" alt="malai-kofta">
+            <p>Malai-Kofta</p>
+        </a>
+        </div>
+
+        <div class="category">
+            <a href="paneer-biryani.html">
+             <img src="images/paneer-biryani.jpg" alt="paneer-biryani">
+            <p>paneer-biryani</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="shai-paneer.html">
+           <img src="images/shaahi paneer.jpg" alt="shahi paneer">
+           <p>Shaahi Paneer</p>
+       </a>
+       </div>
+       <div class="category">
+        <a href="jeera-aloo.html">
+        <img src="images/jeera aloo.jpg" alt="jeera aloo">
+        <p>Jeera aloo</p>
+        </a>
+         </div>
+        <div class="category">
+          <a href="masoor-dal.html">
+            <img src="images/whole masoor daal.jpg" alt="Whole Masoor Dal">
+           <p>Whole Masoor Dal</p>
+         </a>
+          </div>
+          <div class="category">
+            <a href="phulka.html">
+            <img src="images/phulka.jpg" alt="phulka">
+            <p>Phulka</p>
+        </a>
+        </div>
+
+        <div class="category">
+            <a href="Cucumber Raita.html">
+            <img src="images/Cucumber Raita.jpg" alt="Masala Chai">
+            <p>Cucumber Raita</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="pickled-onion.html">
+            <img src="images/onion.jpg" alt="pickled-onion">
+            <p>Pickled Onions</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="paratha.html">
+            <img src="images/plain-paratha.jpg" alt="paratha">
+            <p>Plain Paratha</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="jeera-rice.html">
+            <img src="images/jeera-rice.jpg" alt="jeera rice">
+            <p>Jeera Rice</p>
+        </a>
+        </div>
+        <div class="category">
+            <a href="mint-chutney.html">
+            <img src="images/mint-chutney.jpg" alt="aloo-paratha">
+            <p>Mint Chutney</p>
+        </a>
+        </div>
+        <div class="category">
+                <a href="mango-lassi.html">
+                <img src="images/mango lassi.jpg" alt="Mango lassi">
+                <p>Mango Lassi</p>
+            </a>
+            </div>
+            <div class="category">
+                <a href="thandai.html">
+                <img src="images/thandai.jpg" alt="Thandai">
+                <p>Thandai</p>
+            </a>
+            </div>
+            <div class="category">
+                <a href="ginger-tea.html">
+                <img src="images/ginger tea.jpg" alt="Ginger Tea">
+                <p>Ginger Tea {Adrak Wali Chai}</p>
+            </a>
+            </div>
+            <div class="category">
+                <a href="aam-panna.html">
+                <img src="images/aam panna.jpg" alt="aam panna">
+                <p>Aam panna</p>
+            </a>
+            </div>
+            <div class="category">
+                <a href="masala-doodh.html">
+                <img src="images/masala doodh.jpg" alt="Masala Doodh">
+                <p>Masala Doodh</p>
+            </a>
+            </div>
+            <div class="category">
+                <a href="straberry-shake.html">
+                <img src="images/drinks.jpg" alt="straberry shake">
+                <p>Straberry Shake</p>
+            </a>
+            </div>
+
+        
+    </section>
+</body>
+</html>

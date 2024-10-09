@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    margin-right: 970px;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    margin-top:-30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.recipe-section3 h2 {
+    font-size: 1.9rem;
+    margin-top: -40px;
+    margin-bottom: 55px;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    color: #1b1b1b;
+}
+
+.recipe-section3{
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.recipe-grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 20px; /* Reduced gap */
+    justify-content: space-evenly; /* Added to ensure equal spacing left and right */
+    max-width: 800px; /* Maximum width of the grid container */
+    margin: 0 auto; /* Center the grid container */
+}
+
+.recipe-item3 {
+    border: 1px solid #ddd;
+    border-radius:9px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    width: 90%;
+   
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.recipe-item3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-item3 img {
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+.recipe-item3:hover img {
+    transform: scale(1.05);
+}
+
+.recipe-item3 p {
+    margin: 8px 0 0; 
+    font-size: 1em;
+    font-weight: bold;
+}
+
+</style>
+
+<body>
+    <header>
+        <h1>Cook with Kumud</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="recipes.html">RECIPES</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<section class="recipe-section3">
+    <h2>Desserts</h2>
+    <div class="recipe-grid3">
+        <div class="recipe-item3">
+            <a href="brownie.html">
+            <img src="images/brownie.jpg" alt="brownie">
+            <p>Almond flour brownie</p>
+        </a>
+        </div>
+        <div class="recipe-item3">
+            <a href="kheer.html">
+            <img src="images/kheer.jpg" alt="kheer">
+            <p>Kheer</p>
+        </a>
+        </div>
+        <div class="recipe-item3">
+            <a href="gajar-halwa.html">
+            <img src="images/halwa.jpg" alt="Gajar Ka Halwa">
+            <p>Gajar Ka Halwa</p>
+        </a>
+        </div>
+        <div class="recipe-item3">
+            <a href="shrikhand.html">
+            <img src="images/shrikhand.jpg" alt="shrikhand">
+            <p>Traditional Shrikhand</p>
+        </a>
+        </div>
+        <div class="recipe-item3">
+            <a href="rasmalai.html">
+            <img src="images/rassmalai.jpg" alt="rassmalai">
+            <p>Rassmalai</p>
+        </a>
+        </div>
+        <div class="recipe-item3">
+            <a href="gulab-jamun.html">
+            <img src="images/gulab jamun.jpg" alt="gulab-jamun">
+            <p>Gulab-Jamun</p>
+            </a>
+        </div>
+    </div>
+   
+</section>

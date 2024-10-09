@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of Curry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    margin-right: 970px;
+    margin-top: -20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    margin-top:-35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: -5px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.category {
+    background-color: #ffffff;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(28, 27, 27, 0.309);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .categories {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+
+
+.category {
+    text-align: center;
+    margin: 20px;
+    border-radius: 15px;
+    border-width: 1px;
+
+}
+
+.category img {
+    width: 190px;
+    height: 290px;
+    border-radius: -2%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: -4.8px;
+}
+
+.category img:hover {
+    transform: scale(1.05);
+}
+
+.category h3 {
+    margin-top: 5px;
+    margin-bottom: -10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/*88888888888888888888888888888*/
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #ebe4dfe2;
+    text-align: center;
+    min-height: 40vh;
+}
+
+.search-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.search-section .explore {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 35px;
+    margin-bottom: -10px;
+    font-weight: normal;
+}
+
+.search-section p {
+    margin: 5px 0;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.search-section strong {
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.search-box input {
+    width: 85%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    width: 15%;
+    background-color: #b86d51f9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box button i {
+    font-size: 18px;
+}
+
+.recipe-index {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.recipe-index a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.recipe-index a:hover {
+    color: #7a6a64;
+    border-bottom: 2px solid #7a6a64;
+}
+
+/*88888888888888888*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.recipe-section0 h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+/* Recipe section styles */
+.recipe-section0 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grid for cards */
+.recipe-grid0 {
+    display: flex;
+    justify-content: space-between; /* Even spacing between the cards */
+    gap: 20px; /* Add equal gap between the cards */
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+/* Card styling */
+.recipe-card0 {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: calc(20% - 20px); /* Adjust for 5 cards in a row with equal spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.recipe-card0:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Image styling */
+.recipe-card0 img {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+.recipe-card0:hover img {
+    transform: scale(1.05); /* Zoom effect on image hover */
+}
+
+/* Card text */
+.recipe-card0 p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .recipe-card0 {
+        width: calc(25% - 20px); /* For 3 cards in a row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe-card0 {
+        width: calc(50% - 20px); /* For 2 cards in a row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card0 {
+        width: 100%; /* Full width cards on extra small screens */
+    }
+}
+/*88888888888888888888888*/
+
+.recipe-section1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.recipe-section1 h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.recipe-grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-card1 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card1 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+.recipe-card1:hover img {
+    transform: scale(1.05); /* Zoom effect on image hover */
+}
+
+.recipe-card1 p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+@media (max-width: 1200px) {
+    .recipe-card0 {
+        width: calc(25% - 20px); /* 4 cards in a row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe-card0 {
+        width: calc(50% - 20px); /* 2 cards in a row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card0 {
+        width: 100%; /* Full width cards on extra small screens */
+    }
+}
+
+/*88888888888888*/
+
+
+.recipe-section2 h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.recipe-section2 {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.recipe-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-item2 {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.recipe-item2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-item2 img {
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+.recipe-item2:hover img {
+    transform: scale(1.05);
+}
+
+.recipe-item2 p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+ /*88888888888888*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.recipe-section3 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.recipe-section3 {
+    text-align: center;
+    padding: 20px;}
+
+.recipe-grid3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-item3 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-item3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-item3 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.recipe-item3:hover img {
+    transform: scale(1.05);
+}
+
+.recipe-item3 p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-weight:bold;
+}
+
+/*88888888*/
+
+.drink-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.drink-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.drink-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 items per row */
+    gap: 15px; /* Adjust gap to reduce space */
+    justify-content: center;
+}
+
+.drink-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    padding: 8px; /* Reduce padding */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90%; /* Decrease the item size */
+}
+
+.drink-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.drink-item img {
+    width: 100%;
+    height: 350px; /* Decrease the image height */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+.drink-item:hover img {
+    transform: scale(1.05);
+}
+
+.drink-item p {
+    margin: 8px 0 0; /* Reduce the margin */
+    font-size: 1.1em; /* Decrease the text size */
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Cook with Kumud</h1>
+        <nav>
+            <ul>
+                <li><a href="recipes.html">RECIPES</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <section class="categories">
+        <div class="category">
+            <a href="Appetizers.html">
+                <img src="images/appetizers.jpg" alt="Appetizers">
+                <h3>Appetizers</h3>
+             </a>
+        </div>
+        <div class="category">
+            <a href="Breakfast & Brunch.html">
+            <img src="images/aloo-gobhi.jpg" alt="Breakfast & Brunch">
+            <h3>Breakfast & Brunch</h3>
+        </a>
+        </div>
+        <div class="category">
+            <a href="desserts.html">
+            <img src="images/rassmalai.jpg" alt="Desserts">
+            <h3>Desserts</h3>
+        </a>
+        </div>
+        <div class="category">
+            <a href="drinks.html">
+            <img src="images/drinks.jpg" alt="Drinks">
+            <h3>Drinks</h3>
+        </a>
+        </div>
+        <div class="category">
+            <a href="main-dishes.html">
+            <img src="images/main-course.jpg" alt="Main Dishes">
+            <h3>Main Dishes</h3>
+        </a>
+        </div>
+        <div class="category">
+            <a href="side-dish.html">
+            <img src="images/side-dish.jpg" alt="Side Dishes">
+            <h3>Side Dishes</h3>
+            </a>
+        </div>
+        <div class="category">
+            <img src="images/salad.jpg" alt="Salad">
+            <h3>Salad</h3>
+        </div>
+        <div class="category">
+            <a href="snacks.html">
+            <img src="images/snacks.jpg" alt="Snacks">
+            <h3>Snacks</h3>
+
+            </a>
+        </div>
+    </section>
+
+    
+
+    <section class="search-section">
+        <h2 class="explore">explore</h2>
+        <h1>Looking for something?</h1>
+        <p>Browse over 450+ easy and fail-proof recipes that deliver <strong>authentic flavors</strong> using <strong>modern</strong> and <strong>innovative</strong> techniques.</p>
+        <div class="search-box">
+            <input type="text" placeholder="search recipes..." />
+            <button><i class="fa fa-search"></i></button>
+        </div>
+        <p class="recipe-index">Browse full <a href="#">recipe index →</a></p>
+    </section>
+
+    <section class="recipe-section0">
+        <h1>Breakfast & Brunch</h1>
+        <div class="recipe-grid0">
+            <div class="recipe-card0">
+                <a href="besan-chilla.html">
+                <img src="images/besan-chilla.jpg" alt="Besan Chilla">
+                <p>Besan Chilla</p>
+            </a>
+            </div>
+
+            <div class="recipe-card0">
+                <a href="masala-chai.html">
+                <img src="images/masala-chai.jpg" alt="Masala Chai">
+                <p>Masala Chai</p>
+            </a>
+            </div>
+            <div class="recipe-card0">
+                <a href="dosa.html">
+                <img src="images/dosa.jpg" alt="Crispy Dosa">
+                <p>Crispy Dosa</p>
+            </a>
+            </div>
+            <div class="recipe-card0">
+                <a href="idli.html">
+                <img src="images/idli.jpg" alt="idli">
+                <p>Soft idli</p>
+            </a>
+            </div>
+            <div class="recipe-card0">
+                <a href="aloo-gobhi.html">
+                <img src="images/aloo-gobhi.jpg" alt="Aloo Ghobi">
+                <p>Aloo Gobhi</p>
+            </a>
+            </div>
+        </div>
+       
+    </section>
+
+    <section class="recipe-section1">
+        <h1>Soup Recipes</h1>
+        <div class="recipe-grid1">
+            <div class="recipe-card1">
+                <a href="corn-soup.html">
+                <img src="images/corn-soup.jpg" alt="Sweet Corn Soup">
+                <p>Sweet Corn Soup</p>
+                </a>
+            </div>
+            <div class="recipe-card1">
+                <a href="veg-soup.html">
+                <img src="images/veg-soup.jpg" alt="Minestrone Soup">
+                <p>Vegetable Soup</p>
+                </a>
+            </div>
+            <div class="recipe-card1">
+                <a href="tomato-soup.html">
+                <img src="images/Tomato soup.jpg" alt="Instant Pot Mushroom Barley Soup">
+                <p>Restaurant Style Tomato Soup</p>
+                </a>
+            </div>
+            <div class="recipe-card1">
+                <a href="Butternut Squash Soup.html">
+                <img src="images/Roasted Butternut Squash-Red Pepper Soup.jpg" alt="Instant Pot Chicken Tortellini Soup">
+                <p>Roasted Butternut Squash-Red Pepper Soup</p>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="recipe-section2">
+        <h2>Vegetarian Recipes</h2>
+        <div class="recipe-grid2">
+            <div class="recipe-item2">
+                <a href="aloo-paratha.html">
+                <img src="images/aloo-paratha.jpg" alt="aloo paratha">
+                <p>Aloo Paratha</p>
+            </a>
+            </div>
+            <div class="recipe-item2">
+                <a href="masoor-dal.html">
+                <img src="images/whole masoor daal.jpg" alt="Whole Masoor Dal">
+                <p>Whole Masoor Dal</p>
+            </a>
+            </div>
+            <div class="recipe-item2">
+                <a href="jeera-aloo.html">
+                <img src="images/jeera aloo.jpg" alt="jeera aloo">
+                <p>Jeera aloo</p>
+            </a>
+            </div>
+            <div class="recipe-item2">
+                <a href="paneer-biryani.html">
+                <img src="images/paneer-biryani.jpg" alt="biryani">
+                <p>Paneer Biryani</p>
+            </a>
+            </div>
+            <div class="recipe-item2">
+                <a href="shai-paneer.html">
+                <img src="images/shaahi paneer.jpg" alt="shahi paneer">
+                <p>Shaahi Paneer</p>
+            </a>
+            </div>
+            <div class="recipe-item2">
+                <a href="poha.html">
+                <img src="images/poha.jpg" alt="pooha">
+                <p>Poha</p>
+            </a>
+            </div>
+            <div class="recipe-item2">
+                <a href="thepla.html">
+                <img src="images/thepla.jpg" alt="thepla">
+                <p>Thepla</p>
+            </a>
+            </div>
+            <div class="recipe-item2">
+                <a href="paneer-paratha.html">
+                <img src="images/paneer-paratha.jpg" alt="paratha">
+                <p>Paneer Paratha</p>
+            </a>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="recipe-section3">
+        <h2>Desserts</h2>
+        <div class="recipe-grid3">
+            <div class="recipe-item3">
+                <a href="brownie.html">
+                <img src="images/brownie.jpg" alt="brownie">
+                <p>Almond flour brownie</p>
+            </a>
+            </div>
+            <div class="recipe-item3">
+                <a href="kheer.html">
+                <img src="images/kheer.jpg" alt="kheer">
+                <p>Kheer</p>
+            </a>
+            </div>
+            <div class="recipe-item3">
+                <a href="gajar-halwa.html">
+                <img src="images/halwa.jpg" alt="Gajar Ka Halwa">
+                <p>Gajar Ka Halwa</p>
+            </a>
+            </div>
+            <div class="recipe-item3">
+                <a href="shrikhand.html">
+                <img src="images/shrikhand.jpg" alt="shrikhand">
+                <p>Traditional Shrikhand</p>
+            </a>
+            </div>
+        </div>
+       
+    </section>
+
+    <section class="drink-section">
+        
+        <h2>Drinks</h2>
+        <div class="drink-grid">
+            <div class="drink-item">
+                <a href="mango-lassi.html">
+                <img src="images/mango lassi.jpg" alt="Mango lassi">
+                <p>Mango Lassi</p>
+            </a>
+            </div>
+            <div class="drink-item">
+                <a href="thandai.html">
+                <img src="images/thandai.jpg" alt="Thandai">
+                <p>Thandai</p>
+            </a>
+            </div>
+            <div class="drink-item">
+                <a href="ginger-tea.html">
+                <img src="images/ginger tea.jpg" alt="Ginger Tea">
+                <p>Ginger Tea {Adrak Wali Chai}</p>
+            </a>
+            </div>
+            <div class="drink-item">
+                <a href="aam-panna.html">
+                <img src="images/aam panna.jpg" alt="aam panna">
+                <p>Aam panna</p>
+            </a>
+            </div>
+            <div class="drink-item">
+                <a href="watermelon.html">
+                <img src="images/watermelon-juice.jpg" alt="watermelon-juice">
+                <p>Watermelon Juice</p>
+            </a>
+            </div>
+            
+            <div class="drink-item">
+                <a href="masala-doodh.html">
+                <img src="images/masala doodh.jpg" alt="Masala Doodh">
+                <p>Masala Doodh</p>
+            </a>
+            </div>
+            <div class="drink-item">
+                <a href="banana-milk.html">
+                <img src="images/banana milkshake.jpg" alt="Milkshake">
+                <p>Banana Milkshake</p>
+            </a>
+            </div>
+
+            <div class="drink-item">
+                <a href="straberry-shake.html">
+                <img src="images/drinks.jpg" alt="straberry shake">
+                <p>Straberry Shake</p>
+            </a>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

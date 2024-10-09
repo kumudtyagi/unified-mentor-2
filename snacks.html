@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appetizer & Snack Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+ 
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    margin-right: 970px;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    margin-top:-30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.drink-section h1 {
+    font-size: 1.9rem;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.drink-section {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.drink-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 20px; /* Reduced gap */
+    justify-content: space-evenly; /* Added to ensure equal spacing left and right */
+    max-width: 800px; /* Maximum width of the grid container */
+    margin: 0 auto; /* Center the grid container */
+}
+
+.drink-item {
+    border: 1px solid #ddd;
+    border-radius:9px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    width: 95%;
+   
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.drink-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.drink-item img {
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-bottom: 1px solid #ddd;
+}
+
+.drink-item:hover img {
+    transform: scale(1.05);
+}
+
+.drink-item p {
+    margin: 8px 0 0; 
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+</style>
+<body>
+    <header>
+        <h1>Cook with Kumud</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">RECIPES</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="drink-section">
+        <h1>Appetizers</h1>
+        <div class="drink-grid">
+            <div class="drink-item">
+                <a href="corn-pakoda.html">
+                <img src="images/Corn Pakoda.jpg" alt="Corn Pakoda">
+                <p>Corn Pakoda</p>
+            </a>
+            </div>
+            <div class="drink-item">
+                <a href="vada-pav.html">
+                   <img src="images/vada-pav.jpg" alt="vada Pav">
+                   <p>vada Pav</p>
+                </a>
+            </div>
+            <div class="drink-item">
+                <a href="aloo-tikki.html">
+                <img src="images/aloo tikki.jpg" alt="aloo tikkki">
+                <p>aloo tiki</p>
+            </a>
+            </div>
+
+            <div class="drink-item">
+                <a href="dahi-puri.html">
+                <img src="images/dahi puri.jpg" alt="dahi puri">
+                <p>dahi puri</p>
+            </a>
+            </div>
+            <div class="drink-item">
+                <a href="brownie.html">
+                <img src="images/brownie.jpg" alt="Brownies">
+                <p>Brownies</p>
+            </a>
+            </div>
+            <div class="drink-item">
+                <a href="bhel-puri.html">
+                <img src="images/snacks.jpg" alt="bhel-puri">
+                <p>bhel-puri</p>
+            </a>
+            </div>
+            
+            <div class="drink-item">
+                <a href="Chickpea.html">
+                <img src="images/Chickpea Salad.jpg" alt="Chickpea Salad">
+                <p>Chickpea Salad</p>
+                </a>
+            </div>
+
+            
+            
+
+        </div>
+    </section>
+</body>
+</html>
